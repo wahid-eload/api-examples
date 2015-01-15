@@ -7,7 +7,7 @@
   require_once("init.php");
   $we = new WeConnect();
   $we->debug(True);
-  $xml = $we->request("query",$data);
+  $xml = $we->request("0",$data);
   if (isset($xml->error))
   {
     foreach ($xml->error as $e){print "Error:".$e['value']."\n";}
