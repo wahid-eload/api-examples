@@ -2,5 +2,5 @@
   require_once("init.php");
   $we = new WeConnect();
   $we->debug(True);
-  $xml = $we->request("weconnect", array('command'=>25, 'number'=>3122244506),1);
+  $xml = $we->request("25", array('number'=>3122244506),1);
 ?>
