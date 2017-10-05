@@ -7,7 +7,7 @@
   if (preg_match("/^(0|)(3[0-4][0-9]{8})$/",$number,$ms)){$number=$ms[2];}
   else{print "ERROR: Wrong number provied: $number\n"; return;}
   if (!preg_match("/^3[0-4]$/",$company,$ms)){print "ERROR: Wrong company code provied: $company\n"; return;}
-  if (!preg_match("/^([2-9][0-9]|[1-9][0-9][0-9])$/",$amount,$ms)){print "ERROR: Wrong amount provied: $amount\n"; return;}
+  if (!preg_match("/^([2-9][0-9]|[1-9][0-9]{2,3})$/",$amount,$ms)){print "ERROR: Wrong amount provied: $amount\n"; return;}
   $data{'number'}=$number;
   $data{'company'}=$company;
   $data{'amount'}=$amount;
