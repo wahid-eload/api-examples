@@ -2,7 +2,7 @@
   require_once("init.php");
   $we = new WeConnect();
   $we->debug(True); //This is just for testing, please do not add such a line in production mode.
-  $xml = $we->request("balance");
+  $xml = $we->request("35");
   if (isset($xml->error))
   {
     foreach ($xml->error as $e){print "Error:".$e['value']."\n";}
